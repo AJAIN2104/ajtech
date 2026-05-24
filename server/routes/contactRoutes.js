@@ -1,0 +1,13 @@
+const express = require('express')
+const router = express.Router()
+const {
+  submitContact,
+  getContacts,
+  deleteContact
+} = require('../controllers/contactController')
+
+router.post('/', submitContact)
+router.get('/', getContacts)
+router.delete('/:id', deleteContact)
+
+module.exports = router
