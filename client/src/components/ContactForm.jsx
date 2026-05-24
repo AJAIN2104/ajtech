@@ -26,7 +26,7 @@ function ContactForm() {
     setStatus('')
 
     try {
-      const { data } = await axios.post('https://ajtech-y7ae.onrender.com', formData)
+      const { data } = await axios.post('https://ajtech-y7ae.onrender.com/api/contact', formData)
       setStatus(data.message)
       setFormData(initialState)
     } catch (error) {
