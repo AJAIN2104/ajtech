@@ -9,7 +9,7 @@ function Admin() {
   const fetchContacts = async () => {
     try {
       setLoading(true)
-      const { data } = await axios.get('/api/contact')
+      const { data } = await axios.get('https://ajtech-y7ae.onrender.com/api/contact')
       setContacts(data)
       setError('')
     } catch (err) {
@@ -21,7 +21,7 @@ function Admin() {
 
   const deleteContact = async (id) => {
     try {
-      await axios.delete(`/api/contact/${id}`)
+      await axios.delete(`https://ajtech-y7ae.onrender.com/api/contact/${id}`)
       setContacts((prev) => prev.filter((item) => item._id !== id))
     } catch (err) {
       setError('Failed to delete inquiry')
