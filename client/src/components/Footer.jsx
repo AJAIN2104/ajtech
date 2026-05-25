@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer className="footer">
@@ -10,7 +12,7 @@ function Footer() {
           <a href="#services">Services</a>
           <a href="#work">Work</a>
           <a href="#contact">Contact</a>
-          <a href="/admin">Admin</a>
+         <Link to="/admin" onClick={() => setOpen(false)}>Admin</Link>
         </div>
       </div>
     </footer>
