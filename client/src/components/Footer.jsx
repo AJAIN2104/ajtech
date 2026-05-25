@@ -12,7 +12,7 @@ function Footer() {
           <a href="#services">Services</a>
           <a href="#work">Work</a>
           <a href="#contact">Contact</a>
-         <Link to="/admin" onClick={() => setOpen(false)}>Admin</Link>
+         <Link to="/admin">Admin</Link>
         </div>
       </div>
     </footer>
